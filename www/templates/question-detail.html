@@ -6,16 +6,37 @@
 -->
 <ion-view view-title="{{question.title}}">
   <ion-content class="padding">
-    <img ng-src="/img/category-icons/{{question.icon}}_selected.png" style="width: 64px; height: 64px">
+
+  <div class="row">
+  <div class="col col-20">
+  <a class="button icon-left ion-chevron-left button-clear button-dark"></a>
+  </div>
+  <div class="que-cat col col-60">
+    <button class="button icon {{ question.icon }}"></button>
+    </div>
+    <div class="col col-20">
+    <a class="button icon-right ion-chevron-right button-clear button-dark"></a>
+    </div>
+    </div>
+
+
     <p>
-    <div class="row">
+    <div class="row que-opt">
       <div collection-repeat="option in question.options" class="col">
       <a ng-href="#/test/{{ question.id + 1 }}">
-        <img ng-src="/img/question-icons/{{option}}.png" style="width: 180px; height: 180px">
+        <img ng-src="/img/question-icons/{{option.icon}}_notselected.png" style="width: 180px; height: 180px">
+        <div class="q-text">{{ option.text }}</div>
       </a>
       </div>
     </div>
     </p>
+<div style="clear:both;"></div>
+  <a style="margin-top:100px;" href="#/tab/dash" class="button button-block button-positive">
+  Go back to dashboard
+</a>
+
+
+
 
   </ion-content>
 </ion-view>

@@ -58,7 +58,7 @@ $timeout(function() {
 
 })
 
-.controller('TestCtrl', function($scope) {
+.controller('TabTestCtrl', function($scope, $location) {
   console.log('mrkva test');
 })
 
@@ -83,7 +83,7 @@ $timeout(function() {
 })
 
 .controller('TestDetailCtrl', function($scope, $stateParams, $ionicPopup, $location, Questions) {
-  console.log(Questions.get($stateParams.testId));
+  console.log('test detail');
   $scope.question = Questions.get($stateParams.testId);
 
 $scope.showAlert = function() {
@@ -106,6 +106,7 @@ $scope.showAlert = function() {
   console.log('results');
 })
 .controller('ResultDetailCtrl', function($scope) {
+  $scope.symptomes = [true, true, true, true];
   console.log('results detail');
 })
 

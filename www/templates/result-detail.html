@@ -3,22 +3,53 @@
     
     <div class="list card">
 
-  <div class="item item-avatar">
-    <img src="mcfly.jpg">
-    <h2>Marty McFly</h2>
-    <p>November 05, 1955</p>
+  <div class="results-item item item-text-wrap">
+   
+   <div class="row">
+
+   <div class="set-size charts-container col col-20">
+  <div class="pie-wrapper progress-45 style-2">
+    <span class="label">45<span class="smaller">%</span></span>
+    <div class="pie">
+      <div class="left-side half-circle"></div>
+      <div class="right-side half-circle"></div>
+    </div>
+    <div class="shadow"></div>
+  </div>
+
+</div>
+<div class="col col-60 res-title">
+    <h2>Diabetes mellitus</h2>
+    <p>4/10 symptomes</p>
+</div>
+<div class="col col-20 res-bttn">
+  <button class="button icon-right ion-ios-information-outline button-clear button-dark"></button>
+</div>
+
+</div>
   </div>
 
   <div class="item item-body">
-    <img class="full-image" src="delorean.jpg">
+
+<a class="button button-block button-positive icon-right ion-android-calendar button-calm">Make a Doctor appointment</a>
+
+
+<a class="button button-block button-positive icon-right ion-medkit button-calm">Possible treatments</a>
+
+  <h2>Symptomes</h2>
+    
+      <ion-list>
+
+  <ion-checkbox ng-model="symptomes[0]">Excessive thirst</ion-checkbox>
+  <ion-checkbox ng-model="symptomes[1]">Fatigue</ion-checkbox>
+  <ion-checkbox ng-model="symptomes[2]">Frequent urination</ion-checkbox>
+  <ion-checkbox ng-model="symptomes[3]">Weight loss</ion-checkbox>
+
+</ion-list>
+<hr>
     <p>
-      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-      the content is from a card-body consisting of an image and paragraph text. The footer
-      consists of tabs, icons aligned left, within the card-footer.
-    </p>
-    <p>
-      <a href="#" class="subdued">1 Like</a>
-      <a href="#" class="subdued">5 Comments</a>
+      Diabetes mellitus (DM), commonly referred to as diabetes, is a group of metabolic diseases in which there are high blood sugar levels over a prolonged period. Symptoms of high blood sugar include frequent urination, increased thirst, and increased hunger. If left untreated, diabetes can cause many complications. Acute complications can include diabetic ketoacidosis, nonketotic hyperosmolar coma, or death. Serious long-term complications include heart disease, stroke, chronic kidney failure, foot ulcers, and damage to the eyes.
+      <a href="#">read more</a>
     </p>
   </div>
 

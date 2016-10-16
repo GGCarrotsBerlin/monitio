@@ -5,14 +5,16 @@ angular.module('starter.services', [])
     {
       id: 1,
       title: 'Mood',
-      icon: 'emotions',
-      options: ['happy_box', 'neutral_box', 'angry', 'sad_box']
+      icon: 'ion-android-happy',
+      options: [
+      {icon:'happy_box',text:'Happy'}, {icon:'neutral',text:'Neutral'}, {icon:'angry',text:'Angry'}, {icon:'sad_box',text:'Sad'}
+      ]
     },
     {
       id: 2,
       title: 'Sex life',
-      icon: 'sex',
-      options: ['protected_sex', 'unprotected_2', '1partner', 'multiple_partners']
+      icon: 'ion-ios-heart',
+      options: [{icon:'protected_sex',text:'Protected'}, {icon:'unprotected',text:'Unprotected'}, {icon:'1partner',text:'One partner'}, {icon:'multiple_partners',text:'Multiple Partners'}]
     },
   ];
 

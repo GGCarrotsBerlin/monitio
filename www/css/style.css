@@ -1,6 +1,7 @@
 /* Empty. Add your own CSS if you like */
 .reigser-logo {
 	height:300px;
+	margin-left: -25px;
 }
 
 .button.button-positive {
@@ -78,4 +79,25 @@ a {
 
 .result-a {
 	text-decoration: none;
+}
+
+.que-cat {
+	text-align: center;
+}
+
+.que-cat  .button:before {
+	font-size: 50px;
+}
+
+.que-cat button {
+	background-color: transparent;
+}
+
+.q-text {
+	text-align:center;
+}
+
+.que-opt a {
+	text-decoration: none;
+	color: #959797;
 }

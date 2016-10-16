@@ -74,11 +74,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('tab.test', {
-      url: '/test',
+      url: '/testing',
       views: {
         'tab-test': {
-          templateUrl: 'templates/tab-test.html',
-          controller: 'TestCtrl'
+          templateUrl: 'templates/tab-test-redirect.html',
+          controller: 'TabTestCtrl'
         }
       }
     })
