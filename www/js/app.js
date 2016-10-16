@@ -45,6 +45,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     controller: 'ImportCtrl'
   })
 
+  .state('test', {
+    url: '/test',
+    templateUrl: 'templates/questions.html',
+    controller: 'TestCtrl'
+  })
+   .state('question-detail', {
+      url: '/test/:testId',
+      templateUrl: 'templates/question-detail.html',
+      controller: 'TestDetailCtrl'
+    })
+
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',
@@ -62,24 +73,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.test', {
+      url: '/test',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-test': {
+          templateUrl: 'templates/tab-test.html',
+          controller: 'TestCtrl'
         }
       }
     })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
+   
+
+    .state('tab.results', {
+    url: '/results',
+    views: {
+      'tab-results': {
+        templateUrl: 'templates/tab-results.html',
+        controller: 'ResultsCtrl'
       }
-    })
+    }
+  })
 
   .state('tab.account', {
     url: '/account',

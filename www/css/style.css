@@ -2,3 +2,80 @@
 .reigser-logo {
 	height:300px;
 }
+
+.button.button-positive {
+	background-color: #03866e;
+}
+
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+	background: #03866e;
+    border-color: #03866e;
+}
+
+.button.button-positive.active, .button.button-positive.activated {
+	background-color: #086142;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
+	color: #03866e;
+}
+
+a {
+    color: #03866e;
+}
+
+.import-spinner {
+	margin-top: 20px;
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+.dash-table table {
+	width: 100%;
+}
+
+.dash-table td {
+	text-align: center;
+}
+
+.dash-table td.now {
+	font-weight: bold;
+}
+
+.dash-table td.green {
+	color: green;
+}
+
+.dash-table td.red {
+	color: red;
+}
+
+.set-size {
+	font-size: 4em;
+}
+
+.pie-wrapper {
+	margin:0;
+}
+
+.results-item{
+	padding-left: 0px;
+}
+
+.res-title {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.pie-wrapper .label {
+	left: 0.8em;
+	top: 0.55em;
+}
+
+.res-bttn {
+	margin-top: 5px;
+}
+
+.result-a {
+	text-decoration: none;
+}

@@ -1,5 +1,36 @@
 angular.module('starter.services', [])
 
+.factory('Questions', function(){
+  var questions = [
+    {
+      id: 1,
+      title: 'Mood',
+      icon: 'emotions',
+      options: ['happy_box', 'neutral_box', 'angry', 'sad_box']
+    },
+    {
+      id: 2,
+      title: 'Sex life',
+      icon: 'sex',
+      options: ['protected_sex', 'unprotected_2', '1partner', 'multiple_partners']
+    },
+  ];
+
+  return {
+    all: function(){
+      return questions;
+    },
+    get: function(qID){
+      for (var i = 0; i < questions.length; i++) {
+        if (questions[i].id === parseInt(qID)) {
+          return questions[i];
+        }
+      }
+      return null;
+    }
+  };
+})
+
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 
