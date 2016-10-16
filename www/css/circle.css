@@ -69,6 +69,16 @@
 .pie-wrapper.style-2 .label .smaller {
   color: #bdc3c7;
 }
+.pie-wrapper.progress-15 .pie .right-side {
+  display: none;
+}
+.pie-wrapper.progress-15 .pie .half-circle {
+  border-color: #778690;
+}
+.pie-wrapper.progress-15 .pie .left-side {
+  -webkit-transform: rotate(54deg);
+          transform: rotate(54deg);
+}
 .pie-wrapper.progress-30 .pie .right-side {
   display: none;
 }

@@ -93,6 +93,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+    .state('tab.result-detail', {
+      url: '/results/:resultId',
+      views: {
+        'tab-results': {
+          templateUrl: 'templates/result-detail.html',
+          controller: 'ResultDetailCtrl'
+        }
+      }
+    })
 
   .state('tab.account', {
     url: '/account',

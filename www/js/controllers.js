@@ -105,6 +105,9 @@ $scope.showAlert = function() {
 .controller('ResultsCtrl', function($scope) {
   console.log('results');
 })
+.controller('ResultDetailCtrl', function($scope) {
+  console.log('results detail');
+})
 
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
